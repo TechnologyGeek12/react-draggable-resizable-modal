@@ -1,0 +1,158 @@
+    .flexible-modal {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ccc;
+    background: white;
+    display: table;
+  }
+  
+  /* Animation */
+  
+  .modal-anim-enter {
+    opacity: 0.00;
+    transform: scale(0.7);
+    transition: all 0.2s;
+  }
+  
+  .modal-anim-enter.modal-anim-enter-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .modal-anim-leave {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.2s;
+  }
+  
+  .modal-anim-leave.modal-anim-leave-active {
+    opacity: 0.00;
+    transform: scale(0.7);
+  }
+  
+  .flexible-modal-mask {
+    position: fixed;
+    height: 100%;
+    background: rgba(55, 55, 55, 0.6);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  
+  .flexible-modal-resizer {
+    position:absolute;
+    right:0;
+    bottom:0;
+    cursor:se-resize;
+    margin:5px;
+    border-bottom: solid 2px #333;
+    border-right: solid 2px #333;
+  }
+  
+  .flexible-modal-drag-area{
+    /* background: rgba(22, 22, 333, 0.2); */
+    height: 60px;
+    position:absolute;
+    right:0;
+    top:0;
+    cursor:move;
+  }
+  
+  .flexible-modal-rebound-btn{
+      position: absolute;
+      z-index: 1000;
+      bottom: 0;
+      width: 50px;
+      height: 30px;
+  }
+  
+  .flexible-modal-hidden{
+      position: absolute;
+      z-index: 1;
+      border: 1px solid #ccc;
+      background: white;
+      animation-fill-mode: forwards;
+      -webkit-animation-name: modalHidden; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+      animation-name: modalHidden;
+      animation-duration: 1s;
+  }
+  
+  .flexible-modal-rebound-btn-hidden{
+      display: none
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes modalHidden {
+      from   {}
+      to  {left:0; top:800px; width: 50px; visibility: hidden}
+  }
+  
+  /* Standard syntax */
+  @keyframes modalHidden {
+      from   {}
+      to  {left:0; top:800px; width: 50px; visibility: hidden}
+  }
+  
+  .minimise-enter {
+      opacity: 0.01;
+      transform: scale(0.9) translateY(50%);
+  }
+  .minimise-enter-active {
+      opacity: 1;
+      transform: scale(1) translateY(0%);
+      transition: all 300ms ease-out;
+  }
+  .minimise-exit {
+      opacity: 1;
+      transform: scale(1) translateY(0%);
+  }
+  .minimise-exit-active {
+      opacity: 0.01;
+      transform: scale(0.9) translateY(50%);
+      transition: all 300ms ease-out;
+  }
+  
+  /* .flexible-modal > div > div{width: 90% !important;} */
+  .flexible-modal h3 {
+      /* background:#01b9c1; */
+      /* color: #fff !important; */
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      line-height: 20px !important;
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+      text-transform: uppercase;
+      margin: 0px !important;
+  }
+  .close-icon
+  {
+    border: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: default;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    vertical-align: bottom;
+    background-color: rgb(224, 224, 224);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    height: 23px;
+    width: 23px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    cursor: pointer;
+  }
+  
+  
