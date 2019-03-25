@@ -1,20 +1,17 @@
 {
   "name": "react-draggable-resizable-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "description": "Draggable and Resizable modal with dynamic options",
   "repository": "TechnologyGeek12/react-draggable-resizable-modal",
   "license": "MIT",
   "keywords": [
-    "React Region Flag Select",
-    "Dynamic",
-    "Dynamic Select Dropdown",
-    "Region Select Dropdown",
-    "Country Select Dropdown",
-    "Country Flag Select Dropdown",
-    "State select Dropdown",
-    "City select Dropdown",
-    "npm"
+    "React Draggable Resizable Modal",
+    "Dynamic Modal",
+    "React Draggable Modal",
+    "React Resizable Modal",
+    "React Modal",
+    "Dynamic React Modal"
   ],
   "files": [
     "dist"
@@ -24,7 +21,10 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "^16.3.2"
+    "react-test-renderer": "^16.3.2",
+    "react-icons": "^2.2.7",
+    "react-motion": "^0.5.2",
+    "react-transition-group": "^2.4.0"
   },
   "peerDependencies": {
     "react": "^16.3.2",
@@ -36,10 +36,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
-  },
-  "dependencies": {
-    "react-icons": "^2.2.7",
-    "react-motion": "^0.5.2",
-    "react-transition-group": "^2.4.0"
   }
 }
