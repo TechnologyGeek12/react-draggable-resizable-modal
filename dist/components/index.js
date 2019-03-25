@@ -43,9 +43,7 @@ var ReactDynamicModal = function (_Component) {
                         onRequestClose: this.props.onRequestClose ? this.props.onRequestClose : '',
                         isOpen: this.props.isOpen,
                         onSizeChange: this.onSizeChange,
-                        iscloseButton: this.props.iscloseButton,
-                        disableVerticalResize: this.props.disableVerticalResize,
-                        disableHorizontalResize: this.props.disableHorizontalResize },
+                        isCloseButton: this.props.isCloseButton },
                     React.createElement(
                         'h3',
                         {
@@ -105,10 +103,9 @@ ReactDynamicModal.defaultProps = {
     top: 100,
     initWidth: 500,
     initHeight: 100,
-    iscloseButton: true,
+    isCloseButton: true,
     isOpen: false,
-    disableVerticalResize: false,
-    disableHorizontalResize: false
+    headerValue: 'Modal Header'
 };
 
 export default ReactDynamicModal;

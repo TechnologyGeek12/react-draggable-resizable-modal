@@ -3,7 +3,7 @@ Draggable and Resizable modal with dynamic options
 
 
 <img src="https://img.shields.io/badge/Licence-MIT-blue.svg" alt="Licence" data-canonical-src="https://img.shields.io/badge/Licence-MIT-blue.svg" style="max-width:100%;"/>
-<img src="https://img.shields.io/badge/Version-0.0.4-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.4-brightgreen.svg" style="max-width:100%;"/>
+<img src="https://img.shields.io/badge/Version-0.0.5-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.5-brightgreen.svg" style="max-width:100%;"/>
 
 A Node.js React package that gives draggable and resizable modal with dynamic options to make it custom as per user requirment. Also give a better user experience with better and flexible options.
 
@@ -82,6 +82,7 @@ class App extends Component {
 						  <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                          }
+                    headerValue={'Modal Header'}     
 					actions={<div><button onClick={this.closeModal}>Close</button></div>}
 					footerText={'You can add some notes here'}
 					style={{
@@ -129,6 +130,14 @@ You can pass footer text using it to show some note or other information in moda
    footerText={'You can add some notes here'}
 ```
 
+# HeaderValue prop
+
+You can pass header text using it to show header name on top of header.
+
+```javascript
+   headerValue={'Modal Header'}
+```
+
 # Style prop
 
 You can custom modal style using style props, which gives to change style of modal header, footer text and actions alignment.
@@ -149,11 +158,12 @@ You can custom modal style using style props, which gives to change style of mod
     top: 100,
     initWidth: 500,
     initHeight: 100,
-    iscloseButton: true,
+    isCloseButton: true,
     isOpen: false,
     data:'',
     actions:'',
     footerText:'',
+    headerValue:'Modal Header',
     style:{{
 		    header: {},
 			footer: {},
@@ -167,10 +177,11 @@ You can custom modal style using style props, which gives to change style of mod
     top: Number,
     initWidth: Number,
     initHeight: Number,
-    iscloseButton: Boolean,
+    isCloseButton: Boolean,
     isOpen: Boolean,
     data: Any valid react element to render in modal,
     actions:Any actions can be passed in it to perform in modal,
+    headerValue:String,
     style:{{
 		    header: {color: '', backgroundColor: ''},
 			footer: {color: ''},

@@ -290,7 +290,7 @@ var DraggableModal = function (_Component2) {
 			    onRequestMinimise = _props5.onRequestMinimise,
 			    onRequestRecover = _props5.onRequestRecover,
 			    disableResize = _props5.disableResize,
-			    iscloseButton = _props5.iscloseButton;
+			    isCloseButton = _props5.isCloseButton;
 
 			return React.createElement(
 				'div',
@@ -352,7 +352,7 @@ var DraggableModal = function (_Component2) {
 						}
 					}),
 					!disableResize && React.createElement(Resizer, { updateStateResizing: this.updateStateResizing }),
-					iscloseButton && React.createElement(
+					isCloseButton && React.createElement(
 						'div',
 						{ className: 'close-icon', onClick: onRequestClose },
 						React.createElement(FontAwesome.FaClose, null)

@@ -23,7 +23,7 @@ class ReactDynamicModal extends Component {
                     onRequestClose={this.props.onRequestClose ? this.props.onRequestClose : ''}
                     isOpen={this.props.isOpen}
                     onSizeChange={this.onSizeChange}
-                    iscloseButton={this.props.iscloseButton}>
+                    isCloseButton={this.props.isCloseButton}>
                     <h3
                         style={{
                             color: this.props.style && this.props.style.header && this.props.style.header.color && this.props.style.header.color ? this.props.style.header.color : '#fff',
@@ -73,8 +73,9 @@ ReactDynamicModal.defaultProps = {
     top: 100,
     initWidth: 500,
     initHeight: 100,
-    iscloseButton: true,
-    isOpen: false
+    isCloseButton: true,
+    isOpen: false,
+    headerValue:'Modal Header'
 };
 
 export default ReactDynamicModal;

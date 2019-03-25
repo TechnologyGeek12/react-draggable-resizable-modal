@@ -209,7 +209,7 @@ class DraggableModal extends Component {
 	}
 
 	render() {
-		const { isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize, iscloseButton } = this.props;
+		const { isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize, isCloseButton } = this.props;
 		return (
 			<div>
 				{/*this mask is a must*/}
@@ -271,7 +271,7 @@ class DraggableModal extends Component {
 						}}
 					/>
 					{!disableResize && <Resizer updateStateResizing={this.updateStateResizing} />}
-					{iscloseButton && <div className="close-icon" onClick={onRequestClose}><FontAwesome.FaClose /></div>}
+					{isCloseButton && <div className="close-icon" onClick={onRequestClose}><FontAwesome.FaClose /></div>}
 				</Modal>
 			</div>
 		);
