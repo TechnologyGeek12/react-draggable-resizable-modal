@@ -20,10 +20,12 @@ class ReactDynamicModal extends Component {
                     top={this.props.top}
                     initWidth={this.props.initWidth}
                     initHeight={this.props.initHeight}
+                    minWidth={this.props.minWidth}
                     onRequestClose={this.props.onRequestClose ? this.props.onRequestClose : ''}
                     isOpen={this.props.isOpen}
                     onSizeChange={this.onSizeChange}
-                    isCloseButton={this.props.isCloseButton}>
+                    isCloseButton={this.props.isCloseButton}
+                    key={this.props.minHeight}>
                     <h3
                         style={{
                             color: this.props.style && this.props.style.header && this.props.style.header.color && this.props.style.header.color ? this.props.style.header.color : '#fff',
@@ -38,7 +40,7 @@ class ReactDynamicModal extends Component {
                     <div className="body"
                         style={{
                             padding: '0 12px 0 12px',
-                            height: this.state.height ? this.state.height - 100 : 200,
+                            height: this.state.height ? this.state.height - 100 : this.props.initHeight - 100,
                             overflowY: 'auto'
                         }}>
                         {this.props.data}
@@ -75,7 +77,7 @@ ReactDynamicModal.defaultProps = {
     initHeight: 100,
     isCloseButton: true,
     isOpen: false,
-    headerValue:'Modal Header'
+    headerValue: 'Modal Header'
 };
 
 export default ReactDynamicModal;

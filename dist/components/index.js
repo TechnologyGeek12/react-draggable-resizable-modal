@@ -40,10 +40,12 @@ var ReactDynamicModal = function (_Component) {
                         top: this.props.top,
                         initWidth: this.props.initWidth,
                         initHeight: this.props.initHeight,
+                        minWidth: this.props.minWidth,
                         onRequestClose: this.props.onRequestClose ? this.props.onRequestClose : '',
                         isOpen: this.props.isOpen,
                         onSizeChange: this.onSizeChange,
-                        isCloseButton: this.props.isCloseButton },
+                        isCloseButton: this.props.isCloseButton,
+                        key: this.props.minHeight },
                     React.createElement(
                         'h3',
                         {
@@ -62,7 +64,7 @@ var ReactDynamicModal = function (_Component) {
                         { className: 'body',
                             style: {
                                 padding: '0 12px 0 12px',
-                                height: this.state.height ? this.state.height - 100 : 200,
+                                height: this.state.height ? this.state.height - 100 : this.props.initHeight - 100,
                                 overflowY: 'auto'
                             } },
                         this.props.data
