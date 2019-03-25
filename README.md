@@ -3,7 +3,7 @@ Draggable and Resizable modal with dynamic options
 
 
 <img src="https://img.shields.io/badge/Licence-MIT-blue.svg" alt="Licence" data-canonical-src="https://img.shields.io/badge/Licence-MIT-blue.svg" style="max-width:100%;"/>
-<img src="https://img.shields.io/badge/Version-0.0.3-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.3-brightgreen.svg" style="max-width:100%;"/>
+<img src="https://img.shields.io/badge/Version-0.0.4-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.4-brightgreen.svg" style="max-width:100%;"/>
 
 A Node.js React package that gives draggable and resizable modal with dynamic options to make it custom as per user requirment. Also give a better user experience with better and flexible options.
 
@@ -11,8 +11,8 @@ A Node.js React package that gives draggable and resizable modal with dynamic op
 
 * Inspired by [link to demo](https://wwan5803.github.io/react-modal-resizable-draggable/)
 
-![Modal with one action](https://raw.githubusercontent.com/TechnologyGeek12/react-draggable-resizable-modal/blob/master/src/lib/action1.png)
-![Modal with two action](https://raw.githubusercontent.com/TechnologyGeek12/react-draggable-resizable-modal/blob/master/src/lib/action2.png)
+![Modal with one action](https://github.com/TechnologyGeek12/react-draggable-resizable-modal/blob/master/src/lib/action1.png)
+![Modal with two action](https://github.com/TechnologyGeek12/react-draggable-resizable-modal/blob/master/src/lib/action2.png)
 
 ## Installation
 The package can be installed via NPM:
