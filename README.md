@@ -3,7 +3,7 @@ Draggable and Resizable modal with dynamic options
 
 
 <img src="https://img.shields.io/badge/Licence-MIT-blue.svg" alt="Licence" data-canonical-src="https://img.shields.io/badge/Licence-MIT-blue.svg" style="max-width:100%;"/>
-<img src="https://img.shields.io/badge/Version-0.0.7-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.7-brightgreen.svg" style="max-width:100%;"/>
+<img src="https://img.shields.io/badge/Version-0.0.9-brightgreen.svg" alt="npm Version" data-canonical-src="https://img.shields.io/badge/Version-0.0.9-brightgreen.svg" style="max-width:100%;"/>
 
 A Node.js React package that gives draggable and resizable modal with dynamic options to make it custom as per user requirment. Also give a better user experience with better and flexible options.
 
@@ -48,6 +48,13 @@ Optional prop:
 - `disableHorizontalResize` to disable the horizontal resize function(default false).
 
 
+# Prerequisite
+You need to include fontowesome script link in your index.html.
+
+`<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">`
+
+
 ## Examples
 
 #Complete Example 
@@ -76,7 +83,7 @@ class App extends Component {
 			<div className="App">
                 <button onClick={this.openModal}> Open modal </button>
                 
-				<ReactDynamicModal initWidth={500} initHeight={100} onRequestClose={this.closeModal} isOpen={this.state.isOpen}
+				<ReactDynamicModal initWidth={500} initHeight={400} onRequestClose={this.closeModal} isOpen={this.state.isOpen}
 					data={
                         <div className="body">
 						  <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

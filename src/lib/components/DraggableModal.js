@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Resizer from './Resize.js';
-import * as FontAwesome from 'react-icons/lib/fa';
 import { CSSTransition } from 'react-transition-group';
 
 class Modal extends Component {
@@ -25,7 +24,7 @@ class Modal extends Component {
 					</CSSTransition>
 					{isMinimised && (
 						<button className="flexible-modal-rebound-btn" onClick={onRequestRecover}>
-							<FontAwesome.FaBars />
+							<i class="fas fa-bars"></i>
 						</button>
 					)}
 				</Fragment>
@@ -271,7 +270,7 @@ class DraggableModal extends Component {
 						}}
 					/>
 					{!disableResize && <Resizer updateStateResizing={this.updateStateResizing} />}
-					{isCloseButton && <div className="close-icon" onClick={onRequestClose}><FontAwesome.FaClose /></div>}
+					{isCloseButton && <div className="close-icon" onClick={onRequestClose}><i class="fas fa-times"></i></div>}
 				</Modal>
 			</div>
 		);

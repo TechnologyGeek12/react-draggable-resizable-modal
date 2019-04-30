@@ -10,7 +10,6 @@ import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Resizer from './Resize.js';
-import * as FontAwesome from 'react-icons/lib/fa';
 import { CSSTransition } from 'react-transition-group';
 
 var Modal = function (_Component) {
@@ -60,7 +59,7 @@ var Modal = function (_Component) {
 					isMinimised && React.createElement(
 						'button',
 						{ className: 'flexible-modal-rebound-btn', onClick: onRequestRecover },
-						React.createElement(FontAwesome.FaBars, null)
+						React.createElement('i', { 'class': 'fas fa-bars' })
 					)
 				);
 			} else {
@@ -355,7 +354,7 @@ var DraggableModal = function (_Component2) {
 					isCloseButton && React.createElement(
 						'div',
 						{ className: 'close-icon', onClick: onRequestClose },
-						React.createElement(FontAwesome.FaClose, null)
+						React.createElement('i', { 'class': 'fas fa-times' })
 					)
 				)
 			);
